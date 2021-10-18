@@ -2,22 +2,23 @@
 - We ([OctaC0re](https://ctftime.org/team/141485)) have ranked 98th (out of ~1200 teams) worldwide.
 ---
 ### PoemCollection
-	Hey! I made a cool website that shows off my favorite poems. See if you can find flag.txt somewhere!
+    Hey! I made a cool website that shows off my favorite poems. See if you can find flag.txt somewhere!
 
-	http://web.chal.csaw.io:5003
+    http://web.chal.csaw.io:5003
 
 Just changed the GET argument to "../flag.txt"
 
 http://web.chal.csaw.io:5003/poems/?poem=../flag.txt
 -> and there you go:
 **flag{l0c4l_f1l3_1nclusi0n_f0r_7h3_w1n}**
+
 ---
 ### Crack Me
     Can you crack this?
     Your hash: a60458d2180258d47d7f7bef5236b33e86711ac926518ca4545ebf24cdc0b76c.
     Your salt: the encryption method of the hash.
     (So if the hash is of the word example, you would submit flag{example} to score points.)
-	
+    
 after identifying with `hash-identifier` we identify it's sha256 with salt so we go on it using the `sha256($salt.$pass)` mode:
 
 ` hashcat -m 1420 a60458d2180258d47d7f7bef5236b33e86711ac926518ca4545ebf24cdc0b76c:sha256 rockme.txt`
