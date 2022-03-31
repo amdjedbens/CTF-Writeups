@@ -18,8 +18,9 @@ q = primefac.pollard_pm1(int(n,16))
 # q = 120759530765440164788393584815198181785453365216058011221242572474857701934543658420625103273619411412685939059091676362260202826471982447213813057019415223578402663988113530890287786672842686395844059610821738383797601768012556360596829980884906822859047976972535357205380764775443960532258052851032850088083
 ```
 ## 2.Getting the flag:
-if you read the code carefuly you can see that this is not a classic RSA challenge since the plaintext is used as an exponent, so we're dealing with a discrete logarithm problem.
-The section 4 of the paper provided (Mr. wong's paper) describes clearly the attack we're going to use and luckily sagemath function discrete_log() uses pohlig hellman by default.
+If you read the code carefully you can see that this is not a classic RSA challenge since the plaintext is used as an exponent, so we're dealing with a discrete logarithm problem.
+The section 4 of the paper provided (Mr. Wong's paper) describes clearly the attack we're going to use and luckily sagemath function discrete_log() uses pohlig hellman by default.
+
 
 ## 3. the final exploit:
 ```from Cryptodome.Util.number import *
