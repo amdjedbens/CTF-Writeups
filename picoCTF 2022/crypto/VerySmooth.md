@@ -1,7 +1,7 @@
 # Very Smooth
 
 In this challenge we're given the public key (N,e), the cipher text and the encryotion code.
-by the name of the challenge (and the code) we can see that the primes p,q are smooth, so we'll use pollard rho algorithm to find them.
+by the name of the challenge (and the code) we can see that the primes p,q are smooth, so we'll use pollard p-1 algorithm to find them.
 
 Here is the final exploit
 
