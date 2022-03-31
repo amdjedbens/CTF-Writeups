@@ -4,7 +4,7 @@ In this challenge we are given the public key (n,e=3), the ciphertext and the co
 by reading the paper and doing some research, the solution is pretty clear:
 
 ## 1.Find the primes:
-since p and q are smooth numbers we can use pollard rho to get one of them (I used the primefac library for this purpose):
+since p and q are smooth numbers we can use pollard p-1 to get one of them (I used the primefac library for this purpose):
 
 ```from Crypto.Util.number import *
 import gmpy2
